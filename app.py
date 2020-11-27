@@ -10,7 +10,7 @@ def index():
 
 def ValuePredictor(to_predict_list):
  to_predict = np.array(to_predict_list).reshape(1,-1)
- loaded_model = joblib.load("model.joblib")
+ loaded_model = joblib.load("model1.joblib")
  result = loaded_model.predict(to_predict)
  return result[0]
 
